@@ -8,14 +8,14 @@ pipeline {
             pwd(tmp: true)
             
           },
-          "": {
+          "test": {
             echo 'Test'
             
           }
         )
       }
     }
-    stage('') {
+    stage('junk') {
       steps {
         input(message: 'WAit', id: 'Wait', ok: 'Yes')
       }
